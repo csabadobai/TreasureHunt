@@ -8,7 +8,15 @@ import com.example.csabadobai.treasurehunt.net.response.UserLoginResponse
  */
 class UserLoginMapper {
     fun convertFromDataModel(response: UserLoginResponse): ServerResponse {
-        return ServerResponse(checkResponse(response), buildMessage(response))
+        return ServerResponse(checkResponse(response), buildMessage(response), returnAuthToken(response))
+    }
+
+    private fun returnAuthToken(response: UserLoginResponse): String {
+        var token = String()
+        if (checkResponse(response)) {
+            token = response.data.authorizationToken
+        }
+        return token
     }
 
     private fun buildMessage(response: UserLoginResponse): String {

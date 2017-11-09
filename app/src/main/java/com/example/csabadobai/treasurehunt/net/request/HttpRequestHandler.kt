@@ -13,7 +13,7 @@ import java.net.URL
  */
 class HttpRequestHandler(urlCommand: String, private val methodType: String, private val params: HashMap<String, String>) {
     companion object {
-        private val baseUrl = "http://192.168.115.148/svcourse2017/"
+        private val baseUrl = "http://192.168.0.105/svcourse2017/"
     }
 
     private val completeUrl = baseUrl + urlCommand
