@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Treasure Hunt</string>
+    <string name="sign_in_view">SIGN IN</string>
+    <string name="sign_up_view">SIGN UP</string>
+    <string name="username_view_label">Username</string>
+    <string name="password_view_label">Password</string>
+    <string name="password_hint">Password</string>
+    <string name="username_hint">Username</string>
+    <string name="remember_me_view">Remember me</string>
+    <string name="username">Username</string>
+</resources>
